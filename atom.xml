@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://blog.vpscu.com</id>
     <title>Gridea</title>
-    <updated>2020-06-29T02:50:01.561Z</updated>
+    <updated>2020-06-29T02:53:21.767Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://blog.vpscu.com"/>
     <link rel="self" href="http://blog.vpscu.com/atom.xml"/>
@@ -11,20 +11,43 @@
     <icon>http://blog.vpscu.com/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
     <entry>
+        <title type="html"><![CDATA[Baklib：简单且易用的自助建站平台]]></title>
+        <id>http://blog.vpscu.com/post/baklib/</id>
+        <link href="http://blog.vpscu.com/post/baklib/">
+        </link>
+        <updated>2020-06-29T02:52:46.000Z</updated>
+        <summary type="html"><![CDATA[<p>如果你是一个小白，不懂搭建网站所需要的复杂环境，却又想拥有一个属于你自己的网站时，不妨来试试Baklib吧</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>如果你是一个小白，不懂搭建网站所需要的复杂环境，却又想拥有一个属于你自己的网站时，不妨来试试Baklib吧</p>
+<!-- more -->
+<p>无论是知识库/项目文档/产品手册还是帮助中心/FAQ/在线问答亦或是企业知识输出平台，Baklib都能快速的帮你建立属于你的网站</p>
+<p><strong>简洁的操作界面</strong><br>
+支持KnowledgeBase、FAQ、Guide应用场景；易于设置，易于使用。</p>
+<h2 id="后台管理">后台管理</h2>
+<figure data-type="image" tabindex="1"><img src="https://www.baklib.com/templates/baklib/1/assets/img/saas-1.jpg?_t=1590655616" alt="请输入图片描述" loading="lazy"></figure>
+<h2 id="插件中心">插件中心</h2>
+<figure data-type="image" tabindex="2"><img src="https://www.baklib.com/templates/baklib/1/assets/img/saas-2.jpg?_t=1590655616" alt="请输入图片描述" loading="lazy"></figure>
+<h2 id="网站预览">网站预览</h2>
+<figure data-type="image" tabindex="3"><img src="https://www.baklib.com/templates/baklib/1/assets/img/saas-3.jpg?_t=1590655616" alt="请输入图片描述" loading="lazy"></figure>
+<h2 id="推荐baklib的理由如下">推荐Baklib的理由如下</h2>
+<p>1.你不需要付出任何代价，只需要去官网注册，就能使用免费套餐搭建网站<br>
+2.数据安全有保障，Baklib的二级域名自带ssl证书加密访问并且有回收站及数据导入/出功能<br>
+3.操作简单，只需要按照提示，创建站点，选择主题，网站的雏形就建立了，后续就只有内容发布的问题</p>
+<p>我觉得Baklib是个非常不错的平台，所以也将个人博客备份到了Baklib<br>
+<a href="https://vps.baklib.com/">主机博客</a></p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[flatris：搭建一个俄罗斯方块在线对战平台]]></title>
         <id>http://blog.vpscu.com/post/flatris/</id>
         <link href="http://blog.vpscu.com/post/flatris/">
         </link>
         <updated>2020-06-29T02:46:03.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...<br>
-项目地址：https://github.com/skidding/flatris<br>
+        <summary type="html"><![CDATA[<p>项目地址：https://github.com/skidding/flatris<br>
 环境：nodsjs<br>
 服务器系统：centos7</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...<br>
-项目地址：https://github.com/skidding/flatris<br>
+        <content type="html"><![CDATA[<p>项目地址：https://github.com/skidding/flatris<br>
 环境：nodsjs<br>
 服务器系统：centos7</p>
 <!-- more -->
@@ -82,38 +105,6 @@ git clone https://github.com/skidding/flatris
 <p>目标URL设置为http://127.0.0.1:3000</p>
 <p>保存之后，访问站点域名就能打开对战平台了</p>
 <p>演示站点：https://game.v2ex.ltd/</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>http://blog.vpscu.com/post/hello-gridea/</id>
-        <link href="http://blog.vpscu.com/post/hello-gridea/">
-        </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
 ]]></content>
     </entry>
 </feed>
