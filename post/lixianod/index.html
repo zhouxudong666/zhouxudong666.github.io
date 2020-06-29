@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Gridea | Gridea</title>
+<title>vps 最有价值的个人玩法！离线下载并自动上传onedrive！ | Gridea</title>
 <meta name="description" content="温故而知新" />
 <link rel="shortcut icon" href="http://blog.vpscu.com/favicon.ico">
 <link rel="stylesheet" href="http://blog.vpscu.com/styles/main.css">
@@ -14,11 +14,18 @@
 <script src="http://blog.vpscu.com/media/js/view-image.min.js"></script>
 <script src="http://blog.vpscu.com/media/js/jquery.magnific-popup.min.js"></script>
 <script src="http://blog.vpscu.com/media/js/functions.js"></script>
+    <meta name="referrer" content="never">
+    <meta name="description" content="本期教程比较繁琐，请按照教程一步一步来！
+...
+
+一、前期准备
+1.感谢moerats大佬的教程，可以让我简化以及综合。
+2.只讲linux用法，win和mac去萌咖大佬项目看https://github.com/MoeClub/OneL..." />
+    <meta name="keywords" content="教程" />
+    <script src="http://blog.vpscu.com/media/js/waterfall.min.js"></script>
+    <script src="http://blog.vpscu.com/media/js/prism.min.js"></script>
   </head>
   <body>
-    <!-- start: #wrapper -->
-    <div class="wrapper">
-      
             <header id="header" class="grid-container">
         <!-- start: .menu-wrapper -->
         <div class="menu-mobile"> 
@@ -85,45 +92,201 @@
         </div>
       </div>
 
-      <main id="home" class="main fullcover no-sidebar content">
-        <div class="grid-container module-wrapper enable-masonry aos-init aos-animate" data-aos="fade-up">
-        <div class="epcl-page-wrapper">
-          <div class="left-content grid-70 np-mobile widget_epcl_related_articles">
-                
-            <!-- start: .articles -->
-            <div class="main-article post">
-  <h2 class="year"># Gridea</h2>
-    
-      <article class="item default grid-33 tablet-grid-50 np-mobile">
-        <a href="http://blog.vpscu.com/post/hello-gridea/" class="thumb hover-effect">
-          <span class="fullimage cover" style="display: block;background-image: url('http://blog.vpscu.com/post-images/hello-gridea.png');"></span>
-        </a>
-        <div class="info gradient-effect">
-          <time datetime="2018-12-12">2018-12-12</time>
-          <h4 class="title usmall">
-            <a href="http://blog.vpscu.com/post/hello-gridea/">Hello Gridea</a>
-          </h4>
-        </div>
-      </article>
+      <main id="single" class="main grid-container fullcover no-sidebar aos-init aos-animate" data-aos="fade">
 
-    
-    <div class="clear"></div>
-</div>
-            <!-- end: .articles -->
-            
-                        <div class="epcl-pagination section">
-              <div class="nav">
-                
-                
-              </div>
+        <div class="center content">
+          <div class="featured-image cover" style="background-image: url('https://127f7927c518a3ed.360wzws.com/img/12ded83052b9e5.gif');">
+            <div class="meta top"> 
+              <time class="meta-info" style="float:left;" datetime="2020-06-29"><i class="fa fa-calendar"></i><span class="lately">36 分钟前</span></time>
+              
+              <a href="http://blog.vpscu.com/post/lixianod/#comments" class="comments meta-info" title="">
+                <i class="fa fa-comment remixicon"></i><span class="comment-count valine-comment-count" data-xid="/lixianod/"> </span>
+              </a>
+              <span id="/lixianod/" class="leancloud_visitors views-counter meta-info" title=""><i class="fa fa-leancloud remixicon"></i><span class="leancloud-visitors-count"></span></span>
+              
             </div>
+            <div class="info">
+              <div class="tags ">
+                
+                      <a href="http://blog.vpscu.com/tag/qq1qz7ZU3/" class="ctag ctag-0 ctag-qq1qz7ZU3" aria-label="">教程</a>
+                    
+              </div>
+              <h1 class="title ularge white bold">vps 最有价值的个人玩法！离线下载并自动上传onedrive！</h1>
+            </div>
+          </div>
+        </div>  
+
+        <div class="epcl-page-wrapper">
+          <div class="left-content grid-70 np-mobile">
+            <article class="main-article post">
+              <section class="post-content">
+                <div class="text">
+                  <h2 id="本期教程比较繁琐请按照教程一步一步来">本期教程比较繁琐，请按照教程一步一步来！</h2>
+<p>...</p>
+<!-- more -->
+<h2 id="一-前期准备">一、前期准备</h2>
+<p>1.感谢moerats大佬的教程，可以让我简化以及综合。</p>
+<p>2.只讲linux用法，win和mac去萌咖大佬项目看https://github.com/MoeClub/OneList/tree/master/OneDriveUploader<br>
+3.onedrive账号很好弄，一个5T的账号也就两三块钱。</p>
+<h2 id="二-软件准备">二、软件准备</h2>
+<p>1.你vps有安装aria2，没安装自己去安装一个 https://mikuac.com/archives/355/<br>
+2.授权认证<br>
+点击右侧URL登录并授权，授权地址→ 国际版       世纪互联<br>
+3.授权后会获取一个localhost开头打不开的链接，这里只需要记住code，也就是链接中code=和&amp;中间的参数。</p>
+<h2 id="三-安装onedriveuploader">三、安装OneDriveUploader</h2>
+<pre><code>#64位系统下载
+wget https://raw.githubusercontent.com/MoeClub/OneList/master/OneDriveUploader/amd64/linux/OneDriveUploader -P /usr/local/bin/
+#32位系统下载
+wget https://raw.githubusercontent.com/MoeClub/OneList/master/OneDriveUploader/i386/linux/OneDriveUploader -P /usr/local/bin/
+#arm架构下载
+wget https://raw.githubusercontent.com/MoeClub/OneList/master/OneDriveUploader/arm/linux/OneDriveUploader -P /usr/local/bin/
+</code></pre>
+<p>给予权限</p>
+<pre><code>chmod +x /usr/local/bin/OneDriveUploader
+</code></pre>
+<h2 id="四-初始化配置">四、初始化配置</h2>
+<pre><code>#将moerats替换成你上面获取的code参数
+code=&quot;moerats&quot;
+OneDriveUploader -a &quot;${code}&quot;
+</code></pre>
+<p>如果提示 Init config file: /path/to/file/auth.json 类似信息，则初始化成功。</p>
+<h2 id="aria2自动上传">Aria2自动上传</h2>
+<p>上传脚本<br>
+1.在/root文件夹创建一个空白文件</p>
+<pre><code>vi rcloneupload.sh
+</code></pre>
+<p>2.该文件中复制如下代码</p>
+<pre><code>#!/bin/bash
+
+GID=&quot;$1&quot;;
+FileNum=&quot;$2&quot;;
+File=&quot;$3&quot;;
+MaxSize=&quot;15728640&quot;;
+Thread=&quot;3&quot;;  #默认3线程，自行修改，服务器配置不好的话，不建议太多
+Block=&quot;20&quot;;  #默认分块20m，自行修改
+RemoteDIR=&quot;&quot;;  #上传到Onedrive的路径，默认为根目录，如果要上传到MOERATS目录，&quot;&quot;里面请填成MOERATS
+LocalDIR=&quot;/www/download/&quot;;  #Aria2下载目录，记得最后面加上/
+Uploader=&quot;/usr/local/bin/OneDriveUploader&quot;;  #上传的程序完整路径，默认为本文安装的目录
+Config=&quot;/root/auth.json&quot;;  #初始化生成的配置auth.json绝对路径，参考第3步骤生成的路径
+
+
+if [[ -z $(echo &quot;$FileNum&quot; |grep -o '[0-9]*' |head -n1) ]]; then FileNum='0'; fi
+if [[ &quot;$FileNum&quot; -le '0' ]]; then exit 0; fi
+if [[ &quot;$#&quot; != '3' ]]; then exit 0; fi
+
+function LoadFile(){
+  if [[ ! -e &quot;${Uploader}&quot; ]]; then return; fi
+  IFS_BAK=$IFS
+  IFS=$'\n'
+  tmpFile=&quot;$(echo &quot;${File/#$LocalDIR}&quot; |cut -f1 -d'/')&quot;
+  FileLoad=&quot;${LocalDIR}${tmpFile}&quot;
+  if [[ ! -e &quot;${FileLoad}&quot; ]]; then return; fi
+  ItemSize=$(du -s &quot;${FileLoad}&quot; |cut -f1 |grep -o '[0-9]*' |head -n1)
+  if [[ -z &quot;$ItemSize&quot; ]]; then return; fi
+  if [[ &quot;$ItemSize&quot; -ge &quot;$MaxSize&quot; ]]; then
+    echo -ne &quot;\033[33m${FileLoad} \033[0mtoo large to spik.\n&quot;;
+    return;
+  fi
+  ${Uploader} -c &quot;${Config}&quot; -t &quot;${Thread}&quot; -b &quot;${Block}&quot; -s &quot;${FileLoad}&quot; -r &quot;${RemoteDIR}&quot;
+  if [[ $? == '0' ]]; then
+    rm -rf &quot;${FileLoad}&quot;;
+  fi
+  IFS=$IFS_BAK
+}
+LoadFile;
+</code></pre>
+<p>授权</p>
+<pre><code>chmod +x rcloneupload.sh
+</code></pre>
+<p>然后再到Aria2配置文件中加上一行</p>
+<pre><code>on-download-complete=/root/rcloneupload.sh
+</code></pre>
+<p>即可，后面为脚本的路径。最后重启Aria2生效。</p>
+<p>记得最后的最后在ssh中试一下</p>
+<pre><code>bash /root/rcloneupload.sh
+</code></pre>
+<p>如果没有任何反应，那么就好，如果报错，那么。</p>
+<pre><code>1、安装dos2unix
+Centos：yum install dos2unix -y
+Debian/Ubuntu：apt install dos2unix -y
+2、转换格式
+dos2unix /root/rcloneupload.sh
+</code></pre>
+<p>关于aria2使用<br>
+1.谷歌浏览器插件aria2 for chrome<br>
+2.自己安装或者用别人的ariang<br>
+3.安卓手机软件aria2app（谷歌商店有</p>
+
+                </div>
+                <div class="clear"></div>
+              </section>
+            </article>
+            <div class="clear"></div>
+
+            <section class="related section">
+              
+              <article class="prev grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('https://127f7927c518a3ed.360wzws.com/img/1ed2353125ab98.gif');"></div>
+                 <a href="http://blog.vpscu.com/post/linux-command/" class="full-link"></a>
+                 <div class="info">
+                  <time datetime="2020-06-29">2020-06-29</time>
+                  <h4 class="title white no-margin">整理了一下个人常用到的Linux命令</h4>
+                </div>
+                 <span class="epcl-button red">
+                  <img src="http://blog.vpscu.com/media/images/left-arrow.svg" width="15" alt="Left Arrow">
+                </span>
+                <div class="overlay"></div>
+              </article>
+              
+              
+              <article class="next grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('https://127f7927c518a3ed.360wzws.com/img/15ad2d9eda2b82.gif');"></div>
+                 <a href="http://blog.vpscu.com/post/onedrive25t/" class="full-link"></a>
+                 <div class="info">
+                  <time datetime="2020-06-29">2020-06-29</time>
+                  <h4 class="title white no-margin">OneDrive扩容25t教程及简单小结</h4>
+                </div>
+                 <span class="epcl-button red">
+                  <img src="http://blog.vpscu.com/media/images/right-arrow.svg" width="15" alt="Left Arrow">
+                </span>
+                <div class="overlay"></div>
+              </article>
+              
+
+                <div class="clear"></div>
+            </section>
+
+              <div class="clear"></div>
+              
             
+              <div id="comments" class="bg-white hosted ">
+                <div class="clear"></div>
+<script>
+jQuery(document).ready(function($){
+    $('.vemoji-btn').text('😀');
+    $("#comments").on('click', 'span.vat',function(){
+        $(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+        $('textarea#veditor').focus();
+    })
+    if(window.location.hash){
+        var checkExist = setInterval(function() {
+            if ($(window.location.hash).length) {
+                $('html, body').animate({scrollTop: $(window.location.hash).offset().top-200}, 600);
+                clearInterval(checkExist);
+            }
+        }, 100);
+    }
+})
+</script>
+
+              </div>
+            
+
+            </div>
           </div>
-          </div>
-        </div>
       </main>
 
-        <footer id="footer" class="grid-container">
+          <footer id="footer" class="grid-container">
         <div class="widgets row gradient-effect">
             <div class="default-sidebar border-effect">
               <div class="grid-33 tablet-grid-50 mobile-grid-100">
@@ -268,6 +431,9 @@
     })
 </script>
     
+
+      
+    <script src="http://blog.vpscu.com/media/js/functions-post.js"></script>
 
     </div>
     <!-- end: #wrapper -->

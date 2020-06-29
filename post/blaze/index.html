@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Gridea | Gridea</title>
+<title>Blaze - 端对端的文件传输免费工具 | Gridea</title>
 <meta name="description" content="温故而知新" />
 <link rel="shortcut icon" href="http://blog.vpscu.com/favicon.ico">
 <link rel="stylesheet" href="http://blog.vpscu.com/styles/main.css">
@@ -14,11 +14,15 @@
 <script src="http://blog.vpscu.com/media/js/view-image.min.js"></script>
 <script src="http://blog.vpscu.com/media/js/jquery.magnific-popup.min.js"></script>
 <script src="http://blog.vpscu.com/media/js/functions.js"></script>
+    <meta name="referrer" content="never">
+    <meta name="description" content="Blaze 是一款开源免费的“网页版”在线文件传输工具，它有着非常鲜明的特点，就是免安装任何程序，你只需用较为先进的浏览器 (如电脑上的 Chrome、新版 Edge、FireFox；
+
+手机上的 Safari、Chrome 等) 访问其网..." />
+    <meta name="keywords" content="安利,教程" />
+    <script src="http://blog.vpscu.com/media/js/waterfall.min.js"></script>
+    <script src="http://blog.vpscu.com/media/js/prism.min.js"></script>
   </head>
   <body>
-    <!-- start: #wrapper -->
-    <div class="wrapper">
-      
             <header id="header" class="grid-container">
         <!-- start: .menu-wrapper -->
         <div class="menu-mobile"> 
@@ -85,45 +89,147 @@
         </div>
       </div>
 
-      <main id="home" class="main fullcover no-sidebar content">
-        <div class="grid-container module-wrapper enable-masonry aos-init aos-animate" data-aos="fade-up">
-        <div class="epcl-page-wrapper">
-          <div class="left-content grid-70 np-mobile widget_epcl_related_articles">
-                
-            <!-- start: .articles -->
-            <div class="main-article post">
-  <h2 class="year"># Gridea</h2>
-    
-      <article class="item default grid-33 tablet-grid-50 np-mobile">
-        <a href="http://blog.vpscu.com/post/hello-gridea/" class="thumb hover-effect">
-          <span class="fullimage cover" style="display: block;background-image: url('http://blog.vpscu.com/post-images/hello-gridea.png');"></span>
-        </a>
-        <div class="info gradient-effect">
-          <time datetime="2018-12-12">2018-12-12</time>
-          <h4 class="title usmall">
-            <a href="http://blog.vpscu.com/post/hello-gridea/">Hello Gridea</a>
-          </h4>
-        </div>
-      </article>
+      <main id="single" class="main grid-container fullcover no-sidebar aos-init aos-animate" data-aos="fade">
 
-    
-    <div class="clear"></div>
-</div>
-            <!-- end: .articles -->
-            
-                        <div class="epcl-pagination section">
-              <div class="nav">
-                
-                
-              </div>
+        <div class="center content">
+          <div class="featured-image cover" style="background-image: url('https://127f7927c518a3ed.360wzws.com/img/1d8b5db529dcce.gif');">
+            <div class="meta top"> 
+              <time class="meta-info" style="float:left;" datetime="2020-06-29"><i class="fa fa-calendar"></i><span class="lately">25 分钟前</span></time>
+              
+              <a href="http://blog.vpscu.com/post/blaze/#comments" class="comments meta-info" title="">
+                <i class="fa fa-comment remixicon"></i><span class="comment-count valine-comment-count" data-xid="/blaze/"> </span>
+              </a>
+              <span id="/blaze/" class="leancloud_visitors views-counter meta-info" title=""><i class="fa fa-leancloud remixicon"></i><span class="leancloud-visitors-count"></span></span>
+              
             </div>
+            <div class="info">
+              <div class="tags ">
+                
+                      <a href="http://blog.vpscu.com/tag/D9PgQV0fH/" class="ctag ctag-0 ctag-D9PgQV0fH" aria-label="">安利</a>
+                    
+                      <a href="http://blog.vpscu.com/tag/qq1qz7ZU3/" class="ctag ctag-1 ctag-qq1qz7ZU3" aria-label="">教程</a>
+                    
+              </div>
+              <h1 class="title ularge white bold">Blaze - 端对端的文件传输免费工具</h1>
+            </div>
+          </div>
+        </div>  
+
+        <div class="epcl-page-wrapper">
+          <div class="left-content grid-70 np-mobile">
+            <article class="main-article post">
+              <section class="post-content">
+                <div class="text">
+                  <p>Blaze 是一款开源免费的“网页版”在线文件传输工具，它有着非常鲜明的特点，就是免安装任何程序，你只需用较为先进的浏览器 (如电脑上的 Chrome、新版 Edge、FireFox；</p>
+<!-- more -->
+<p>手机上的 Safari、Chrome 等) 访问其网站即可传文件。</p>
+<p>与网盘完全不同的是，Blaze 通过使用 WebSockets 和 WebRTC 技术，能让你的多个设备实现Peer to Peer「点对点」文件传输，整个传输过程完全无需将文件上传到任何的服务器，而是直接在设备之间连接互传，所以如果你的设备都处于同一局域网内，就能实现不耗费公网流量的高速且安全的内网传输了。<br>
+部署起来的话其实是非常简单的，博主使用的是centos7系统</p>
+<p>安装epel源</p>
+<pre><code>yum install epel-release
+</code></pre>
+<p>更新软件</p>
+<pre><code>yum -y update
+</code></pre>
+<p>安装node.js</p>
+<pre><code>yum install -y nodejs
+</code></pre>
+<p>去官方fork源代码<br>
+<a href="https://github.com/blenderskool/blaze">官网源代码</a></p>
+<p>拉取代码</p>
+<pre><code>git clone https://github.com/blenderskool/blaze
+git remote add upstream https://github.com/blenderskool/blaze.git
+</code></pre>
+<p>开始安装</p>
+<pre><code>cd blaze
+npm install
+</code></pre>
+<p>安装完成之后，用如下命令部署</p>
+<pre><code>npm run dev
+</code></pre>
+<p>然后会监听3030端口，用ip:3030端口访问</p>
+<p>安装screen</p>
+<pre><code>yum -y install screen
+</code></pre>
+<p>创建后台窗口</p>
+<pre><code>screen -S blaze
+</code></pre>
+<p>启动blaze</p>
+<pre><code>npm run dev
+</code></pre>
+<p>博主搭建的测试页面<br>
+<a href="http://107.173.50.101:3030/">测试页面</a></p>
+
+                </div>
+                <div class="clear"></div>
+              </section>
+            </article>
+            <div class="clear"></div>
+
+            <section class="related section">
+              
+              <article class="prev grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('https://127f7927c518a3ed.360wzws.com/img/12586dbc9808de.gif');"></div>
+                 <a href="http://blog.vpscu.com/post/game-Detroit/" class="full-link"></a>
+                 <div class="info">
+                  <time datetime="2020-06-29">2020-06-29</time>
+                  <h4 class="title white no-margin">入手了新游戏 底特律：成为人类 </h4>
+                </div>
+                 <span class="epcl-button red">
+                  <img src="http://blog.vpscu.com/media/images/left-arrow.svg" width="15" alt="Left Arrow">
+                </span>
+                <div class="overlay"></div>
+              </article>
+              
+              
+              <article class="next grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('https://127f7927c518a3ed.360wzws.com/img/1ca3e923dd85be.gif');"></div>
+                 <a href="http://blog.vpscu.com/post/uos-linux/" class="full-link"></a>
+                 <div class="info">
+                  <time datetime="2020-06-29">2020-06-29</time>
+                  <h4 class="title white no-margin">国产操作系统uos初体验，附vm安装教程和iso包</h4>
+                </div>
+                 <span class="epcl-button red">
+                  <img src="http://blog.vpscu.com/media/images/right-arrow.svg" width="15" alt="Left Arrow">
+                </span>
+                <div class="overlay"></div>
+              </article>
+              
+
+                <div class="clear"></div>
+            </section>
+
+              <div class="clear"></div>
+              
             
+              <div id="comments" class="bg-white hosted ">
+                <div class="clear"></div>
+<script>
+jQuery(document).ready(function($){
+    $('.vemoji-btn').text('😀');
+    $("#comments").on('click', 'span.vat',function(){
+        $(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+        $('textarea#veditor').focus();
+    })
+    if(window.location.hash){
+        var checkExist = setInterval(function() {
+            if ($(window.location.hash).length) {
+                $('html, body').animate({scrollTop: $(window.location.hash).offset().top-200}, 600);
+                clearInterval(checkExist);
+            }
+        }, 100);
+    }
+})
+</script>
+
+              </div>
+            
+
+            </div>
           </div>
-          </div>
-        </div>
       </main>
 
-        <footer id="footer" class="grid-container">
+          <footer id="footer" class="grid-container">
         <div class="widgets row gradient-effect">
             <div class="default-sidebar border-effect">
               <div class="grid-33 tablet-grid-50 mobile-grid-100">
@@ -268,6 +374,9 @@
     })
 </script>
     
+
+      
+    <script src="http://blog.vpscu.com/media/js/functions-post.js"></script>
 
     </div>
     <!-- end: #wrapper -->

@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>flatris：搭建一个俄罗斯方块在线对战平台 | Gridea</title>
+<title>整理了一下个人常用到的Linux命令 | Gridea</title>
 <meta name="description" content="温故而知新" />
 <link rel="shortcut icon" href="http://blog.vpscu.com/favicon.ico">
 <link rel="stylesheet" href="http://blog.vpscu.com/styles/main.css">
@@ -15,17 +15,14 @@
 <script src="http://blog.vpscu.com/media/js/jquery.magnific-popup.min.js"></script>
 <script src="http://blog.vpscu.com/media/js/functions.js"></script>
     <meta name="referrer" content="never">
-    <meta name="description" content="项目地址：https://github.com/skidding/flatris
-环境：nodsjs
-服务器系统：centos7
+    <meta name="description" content="1.命令可能有些已经失效，请仔细检查
+2.若命令有错误，可以在下方评论
+3.都是个人随手记录，系统性不是特别好
+...
 
-首先更新系统
-yum -y update
-
-然后安装环境
-yum -y install nodejs
-
-安装..." />
+linux笔记
+检测vps内存（包含swap）
+wget http://down.xxorg.com/Tool/mem..." />
     <meta name="keywords" content="教程" />
     <script src="http://blog.vpscu.com/media/js/waterfall.min.js"></script>
     <script src="http://blog.vpscu.com/media/js/prism.min.js"></script>
@@ -100,14 +97,14 @@ yum -y install nodejs
       <main id="single" class="main grid-container fullcover no-sidebar aos-init aos-animate" data-aos="fade">
 
         <div class="center content">
-          <div class="featured-image cover" style="background-image: url('https://127f7927c518a3ed.360wzws.com/img/18bed72d8b6952.gif');">
+          <div class="featured-image cover" style="background-image: url('https://127f7927c518a3ed.360wzws.com/img/1ed2353125ab98.gif');">
             <div class="meta top"> 
-              <time class="meta-info" style="float:left;" datetime="2020-06-29"><i class="fa fa-calendar"></i><span class="lately">1 小时前</span></time>
+              <time class="meta-info" style="float:left;" datetime="2020-06-29"><i class="fa fa-calendar"></i><span class="lately">32 分钟前</span></time>
               
-              <a href="http://blog.vpscu.com/post/flatris/#comments" class="comments meta-info" title="">
-                <i class="fa fa-comment remixicon"></i><span class="comment-count valine-comment-count" data-xid="/flatris/"> </span>
+              <a href="http://blog.vpscu.com/post/linux-command/#comments" class="comments meta-info" title="">
+                <i class="fa fa-comment remixicon"></i><span class="comment-count valine-comment-count" data-xid="/linux-command/"> </span>
               </a>
-              <span id="/flatris/" class="leancloud_visitors views-counter meta-info" title=""><i class="fa fa-leancloud remixicon"></i><span class="leancloud-visitors-count"></span></span>
+              <span id="/linux-command/" class="leancloud_visitors views-counter meta-info" title=""><i class="fa fa-leancloud remixicon"></i><span class="leancloud-visitors-count"></span></span>
               
             </div>
             <div class="info">
@@ -116,7 +113,7 @@ yum -y install nodejs
                       <a href="http://blog.vpscu.com/tag/qq1qz7ZU3/" class="ctag ctag-0 ctag-qq1qz7ZU3" aria-label="">教程</a>
                     
               </div>
-              <h1 class="title ularge white bold">flatris：搭建一个俄罗斯方块在线对战平台</h1>
+              <h1 class="title ularge white bold">整理了一下个人常用到的Linux命令</h1>
             </div>
           </div>
         </div>  
@@ -126,64 +123,147 @@ yum -y install nodejs
             <article class="main-article post">
               <section class="post-content">
                 <div class="text">
-                  <p>项目地址：https://github.com/skidding/flatris<br>
-环境：nodsjs<br>
-服务器系统：centos7</p>
+                  <p>1.命令可能有些已经失效，请仔细检查<br>
+2.若命令有错误，可以在下方评论<br>
+3.都是个人随手记录，系统性不是特别好<br>
+...</p>
 <!-- more -->
-<p>首先更新系统</p>
-<pre><code>yum -y update
-</code></pre>
-<p>然后安装环境</p>
-<pre><code>yum -y install nodejs
-</code></pre>
-<p>安装管理器n</p>
-<pre><code>npm install -g n
-</code></pre>
-<p>安装nodejs最新版本</p>
-<pre><code>n latest
-</code></pre>
-<p>切换最新版本（回车确认）</p>
-<pre><code>n
-</code></pre>
-<p>安装yarn</p>
-<pre><code>npm install -g yarn
-</code></pre>
-<p>拉取一下项目文件，没安装git的先安装git</p>
-<pre><code>yum -y install git
-git clone https://github.com/skidding/flatris
-</code></pre>
-<p>进入项目文件夹</p>
-<pre><code>cd flatris
-</code></pre>
-<p>文件重命名</p>
-<pre><code>mv .env.example.js .env.js
-</code></pre>
-<p>安装</p>
-<pre><code>yarn install
-</code></pre>
-<p>构建</p>
-<pre><code>yarn build
-</code></pre>
-<p>启动</p>
-<pre><code>yarn start
-</code></pre>
-<p>默认运行在3000端口，请将对应的防火墙打开，没有特殊要求的话，已经搭建完成</p>
-<p>如果要解决后台运行的问题，先按ctrl+c退出，然后安装screen</p>
-<pre><code>yum -y install screen
-</code></pre>
-<p>创建一个后台终端</p>
-<pre><code>screen -S flatris
-</code></pre>
-<p>继续启动</p>
-<pre><code>yarn start
-</code></pre>
-<p>这样即使你关闭ssh，对战平台也会继续运行</p>
-<p>但是我们可以看到，现在我们用的是ip+端口的方式访问的，怎样使用域名访问呢</p>
-<p>我使用的方法是反代</p>
-<p>由于我已经安装好了宝塔面板，所以直接创建站点，点击反向代理</p>
-<p>目标URL设置为http://127.0.0.1:3000</p>
-<p>保存之后，访问站点域名就能打开对战平台了</p>
-<p>演示站点：https://game.v2ex.ltd/</p>
+<h1 id="linux笔记">linux笔记</h1>
+<h3 id="检测vps内存包含swap">检测vps内存（包含swap）</h3>
+<p>wget http://down.xxorg.com/Tool/memtest/memtest_10M_64 chmod +x ./memtest_10M_64 ./memtest_10M_64</p>
+<h3 id="安装epel源">安装epel源</h3>
+<p>yum install epel-release</p>
+<h3 id="一键评测脚本">一键评测脚本</h3>
+<p>wget https://raw.githubusercontent.com/oooldking/script/master/superbench.sh<br>
+chmod +x superbench.sh<br>
+./superbench.sh</p>
+<p>wget -qO- --no-check-certificate https://raw.githubusercontent.com/oooldking/script/master/superbench.sh | bash</p>
+<p>wget -qO- git.io/superbench.sh | bash</p>
+<p>chmod 777 ./unalpine.sh<br>
+./unalpine.sh</p>
+<h3 id="iptables-端口转发一键管理脚本-v111">iptables 端口转发一键管理脚本 [v1.1.1]</h3>
+<p>wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/iptables-pf.sh &amp;&amp; chmod +x iptables-pf.sh &amp;&amp; bash iptables-pf.sh</p>
+<h3 id="rclone挂载示例">rclone挂载示例</h3>
+<p>rclone mount zxd666: /zxd666 --allow-other --allow-non-empty --vfs-cache-mode writes</p>
+<p>java -Xmx1024M -Xms1024M -jar server.jar nogui</p>
+<p>rclone mount zxd666:/root /zxd666 --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --umask 000</p>
+<h3 id="安装nodejs-centos系统">安装nodejs #CentOS系统</h3>
+<p>curl -sL https://rpm.nodesource.com/setup_10.x | bash -</p>
+<p>yum install nodejs git -y</p>
+<h3 id="查看onedrive容量页面">查看onedrive容量页面</h3>
+<p>storman.aspx</p>
+<h3 id="dd安装win81">dd安装win8.1</h3>
+<p>wget --no-check-certificate -qO DebianNET.sh 'https://raw.githubusercontent.com/wn789/xitong/master/DebianNET.sh' &amp;&amp; bash DebianNET.sh -dd 'https://moeclub.org/onedrive/IMAGE/Windows/win8.1emb_x64.tar.gz'</p>
+<h3 id="安装rclone">安装rclone</h3>
+<p>curl https://rclone.org/install.sh | sudo bash</p>
+<h3 id="生成ssh密钥">生成ssh密钥</h3>
+<p>ssh-keygen -t rsa -b 4096 -C“3014779200@qq.com”</p>
+<h3 id="更换阿里云源">更换阿里云源</h3>
+<p>wget -qO- git.io/superupdate.sh | bash</p>
+<h3 id="centos7创建swap">centos7创建swap</h3>
+<p>dd if=/dev/zero of=/swapfile bs=1M count=1024</p>
+<p>mkswap /swapfile</p>
+<p>swapon /swapfile</p>
+<p>vi /etc/fstab</p>
+<p>/swapfile swap swap defaults 0 0</p>
+<h3 id="网络测速">网络测速</h3>
+<p>wget https://raw.githubusercontent.com/oooldking/script/master/superspeed.sh<br>
+chmod +x superspeed.sh<br>
+./superspeed.sh</p>
+<h3 id="java运行jar示例">java运行jar示例</h3>
+<p>java -Xmx1900M -Xms64M -jar -Dfile.encoding=utf-8 -Duser.timezone=Asia/Shanghai run.jar nogui</p>
+<h3 id="一键挂载">一键挂载</h3>
+<p>yum install wget -y &amp;&amp; wget -O auto_disk.sh http://download.bt.cn/tools/auto_disk.sh &amp;&amp; bash auto_disk.sh</p>
+<p>wget -O disk.sh http://download.bt.cn/tools/disk.sh &amp;&amp; bash disk.sh /website</p>
+<h3 id="解决host-key-verification-failed">解决Host key verification failed</h3>
+<p>ssh-keygen -R ip</p>
+<h3 id="centos安装python3">centos安装python3</h3>
+<p>wget https://www.moerats.com/usr/shell/Python3/CentOS_Python3.6.sh &amp;&amp; sh CentOS_Python3.6.sh</p>
+<h3 id="申请ssl证书文件验证位置">申请ssl证书文件验证位置</h3>
+<p>/.well-known/pki-validation/fileauth.txt</p>
+<h3 id="aws设置密码登陆脚本">aws设置密码登陆脚本</h3>
+<p>#!/bin/bash<br>
+echo root:xxxxxxxx |sudo chpasswd root<br>
+sudo sed -i 's/^#?PermitRootLogin.<em>/PermitRootLogin yes/g' /etc/ssh/sshd_config;<br>
+sudo sed -i 's/^#?PasswordAuthentication.</em>/PasswordAuthentication yes/g' /etc/ssh/sshd_config;<br>
+sudo reboot</p>
+<h3 id="ss一键脚本">ss一键脚本</h3>
+<p>ss：wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-go.sh<br>
+chmod +x shadowsocks-go.sh<br>
+./shadowsocks-go.sh 2&gt;&amp;1 | tee shadowsocks-go.log</p>
+<h3 id="goflyway一键脚本">goflyway一键脚本</h3>
+<p>wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/goflyway.sh &amp;&amp; chmod +x goflyway.sh &amp;&amp; bash goflyway.sh</p>
+<h3 id="ovz架构bbrcentos6需要升级glibc">ovz架构bbr（centos6需要升级glibc）</h3>
+<p>wget --no-check-certificate https://raw.githubusercontent.com/kuoruan/shell-scripts/master/ovz-bbr/ovz-bbr-installer.sh chmod +x ovz-bbr-installer.sh ./ovz-bbr-installer.sh</p>
+<h3 id="kvm架构bbr">kvm架构bbr</h3>
+<p>wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh<br>
+chmod +x bbr.sh<br>
+./bbr.sh</p>
+<h3 id="多版本bbr一键脚本">多版本bbr一键脚本</h3>
+<p>wget -N --no-check-certificate &quot;https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh&quot; &amp;&amp; chmod +x tcp.sh &amp;&amp; ./tcp.sh</p>
+<p>java -jar openzaly-server.jar -h</p>
+<h3 id="另一个ss脚本">另一个ss脚本</h3>
+<p>wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh<br>
+chmod +x shadowsocks-all.sh<br>
+./shadowsocks-all.sh 2&gt;&amp;1 | tee shadowsocks-all.log</p>
+<h3 id="mtproxy">MTProxy</h3>
+<p>wget -N --no-check-certificate https://raw.githubusercontent.com/iiiiiii1/doubi/master/mtproxy_go.sh &amp;&amp; bash mtproxy_go.sh</p>
+<h3 id="跑分脚本">跑分脚本</h3>
+<p>wget https://soft.itbulu.com/tools/UnixBench5.1.3.tgz<br>
+tar -zxvf UnixBench5.1.3.tgz<br>
+cd UnixBench<br>
+make<br>
+./Run</p>
+<h3 id="宝塔">宝塔</h3>
+<p>yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install.sh &amp;&amp; sh install.sh</p>
+<h3 id="修改宝塔端口">修改宝塔端口</h3>
+<h4 id="centos6">centos6</h4>
+<p>echo '8881' &gt; /www/server/panel/data/port.pl &amp;&amp; /etc/init.d/bt restart iptables -I INPUT -p tcp -m state --state NEW -m tcp --dport 8881 -j ACCEPT service iptables save</p>
+<h4 id="centos7">centos7</h4>
+<p>echo '8881' &gt; /www/server/panel/data/port.pl &amp;&amp; /etc/init.d/bt restart firewall-cmd --permanent --zone=public --add-port=8881/tcp firewall-cmd --reload</p>
+<h3 id="宝塔面板其他示例">宝塔面板其他示例</h3>
+<p>echo '23901' &gt; /www/server/panel/data/port.pl &amp;&amp; service bt restart<br>
+echo '[::]:8080' &gt; /www/server/panel/data/port.pl &amp;&amp; /etc/init.d/bt restart<br>
+http://[2001:41d0:8:6db3:2020:2021:0:19]:8080/login</p>
+<h3 id="nginx监听ipv6">nginx监听ipv6</h3>
+<p>listen 80;</p>
+<p>listen [::]:80;</p>
+<p>listen 443 ssl http2;</p>
+<p>listen [::]:443 ssl http2;</p>
+<h3 id="修改ssh端口">修改ssh端口</h3>
+<p>vim /etc/ssh/sshd_config</p>
+<h3 id="重启ssh">重启ssh</h3>
+<p>/etc/init.d/sshd restart</p>
+<h3 id="查看系统端口占用">查看系统端口占用</h3>
+<p>yum -y install net-tools</p>
+<p>netstat -ntlp</p>
+<h3 id="hping3用法示例">hping3用法示例</h3>
+<p>hping3 -S -i u1000 -p 80 -V 40.83.78.164<br>
+hping3 -c 10000 -d 120 -S -w 64 -p -i u100 80 104.167.104.88<br>
+-i u100</p>
+<h3 id="安装ssh">安装ssh</h3>
+<p>yum install openssh-server -y<br>
+service sshd restart</p>
+<h3 id="安装python36">安装python3.6</h3>
+<p>yum install -y wget &amp;&amp; wget -O py3.sh https://lnmp.me/ftp/py3.sh --no-check-certificate &amp;&amp; sh py3.sh</p>
+<h3 id="kangle">kangle</h3>
+<p>yum -y install wget;wget http://kangle.odata.cc/start;sh start</p>
+<h3 id="改宝塔密码">改宝塔密码</h3>
+<p>cd /www/server/panel &amp;&amp; python tools.pyc panel xxxxxxxx</p>
+<h3 id="centos关闭防火墙">centos关闭防火墙</h3>
+<h4 id="6">6</h4>
+<p>service iptables stop</p>
+<h4 id="7">7</h4>
+<p>systemctl stop firewalld.service</p>
+<h3 id="urlos安装后需执行">urlos安装后需执行</h3>
+<p>service docker restart</p>
+<h3 id="汉化面板">汉化面板</h3>
+<p>wget -P /opt/ovz-web-panel/config/locales http://mise.tianji.me/zh_CN.yml<br>
+/etc/rc.d/init.d/owp restart</p>
+<h3 id="端口映射示例">端口映射示例</h3>
+<p>iptables -t nat -A PREROUTING -i eth0 -p tcp -m tcp --dport 10022 -j DNAT --to-destination 192.168.1.100:22</p>
+<h3 id="一键增加中文">一键增加中文</h3>
+<p>wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/LocaleCN/master/LocaleCN.sh &amp;&amp; bash LocaleCN.sh</p>
 
                 </div>
                 <div class="clear"></div>
@@ -194,11 +274,11 @@ git clone https://github.com/skidding/flatris
             <section class="related section">
               
               <article class="prev grid-50 tablet-grid-50 grid-parent">
-                <div class="thumb cover lazy loaded" style="background-image: url('https://127f7927c518a3ed.360wzws.com/img/15d88339ef2b08.gif');"></div>
-                 <a href="http://blog.vpscu.com/post/baklib/" class="full-link"></a>
+                <div class="thumb cover lazy loaded" style="background-image: url('https://127f7927c518a3ed.360wzws.com/img/1ca3e923dd85be.gif');"></div>
+                 <a href="http://blog.vpscu.com/post/uos-linux/" class="full-link"></a>
                  <div class="info">
                   <time datetime="2020-06-29">2020-06-29</time>
-                  <h4 class="title white no-margin">Baklib：简单且易用的自助建站平台</h4>
+                  <h4 class="title white no-margin">国产操作系统uos初体验，附vm安装教程和iso包</h4>
                 </div>
                  <span class="epcl-button red">
                   <img src="http://blog.vpscu.com/media/images/left-arrow.svg" width="15" alt="Left Arrow">
@@ -206,6 +286,19 @@ git clone https://github.com/skidding/flatris
                 <div class="overlay"></div>
               </article>
               
+              
+              <article class="next grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('https://127f7927c518a3ed.360wzws.com/img/12ded83052b9e5.gif');"></div>
+                 <a href="http://blog.vpscu.com/post/lixianod/" class="full-link"></a>
+                 <div class="info">
+                  <time datetime="2020-06-29">2020-06-29</time>
+                  <h4 class="title white no-margin">vps 最有价值的个人玩法！离线下载并自动上传onedrive！</h4>
+                </div>
+                 <span class="epcl-button red">
+                  <img src="http://blog.vpscu.com/media/images/right-arrow.svg" width="15" alt="Left Arrow">
+                </span>
+                <div class="overlay"></div>
+              </article>
               
 
                 <div class="clear"></div>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://blog.vpscu.com</id>
     <title>Gridea</title>
-    <updated>2020-06-29T02:53:21.767Z</updated>
+    <updated>2020-06-29T03:35:16.117Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://blog.vpscu.com"/>
     <link rel="self" href="http://blog.vpscu.com/atom.xml"/>
@@ -11,14 +11,412 @@
     <icon>http://blog.vpscu.com/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
     <entry>
+        <title type="html"><![CDATA[入手了新游戏 底特律：成为人类 ]]></title>
+        <id>http://blog.vpscu.com/post/game-Detroit/</id>
+        <link href="http://blog.vpscu.com/post/game-Detroit/">
+        </link>
+        <updated>2020-06-29T03:25:17.000Z</updated>
+        <summary type="html"><![CDATA[<p>其实也不算新游戏了，只不过之前是在ps4平台上了，云了好几次，然后今年上半年在Epic Games上预售，用俄罗斯区账号入手的，大概花了35元左右，现在的话，美区要30美元，俄区要190元左右。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>其实也不算新游戏了，只不过之前是在ps4平台上了，云了好几次，然后今年上半年在Epic Games上预售，用俄罗斯区账号入手的，大概花了35元左右，现在的话，美区要30美元，俄区要190元左右。</p>
+<!-- more -->
+<p>这是之前云的游戏完美线路，分享出来<br>
+<a href="https://pan.zxd.win/%E8%A7%86%E9%A2%91/%E3%80%90%E5%BA%95%E7%89%B9%E5%BE%8B%EF%BC%9A%E8%AE%8A%E4%BA%BA%E3%80%914K%E9%9B%BB%E5%BD%B1%E5%89%AA%E8%BC%AF%E7%89%88%28%E5%AE%8C%E7%BE%8E%E8%B7%AF%E7%B7%9A%29%20-%20%E5%89%8D%E7%AF%87%20-%20PS4%20Pro%E4%B8%AD%E6%96%87%E5%8A%87%E6%83%85%E9%9B%BB%E5%BD%B1%20-%20%E5%BA%95%E7%89%B9%E5%BE%8B%EF%BC%9A%E5%8F%98%E4%BA%BA%20-%20Detroit_%20Become%20Human%20All%20Cutscenes.mp4">【底特律：變人】4K電影剪輯版(完美路線) - 前篇</a><br>
+<a href="https://pan.zxd.win/%E8%A7%86%E9%A2%91/%E3%80%90%E5%BA%95%E7%89%B9%E5%BE%8B%EF%BC%9A%E8%AE%8A%E4%BA%BA%E3%80%914K%E9%9B%BB%E5%BD%B1%E5%89%AA%E8%BC%AF%E7%89%88%28%E5%AE%8C%E7%BE%8E%E8%B7%AF%E7%B7%9A%29%20-%20%E5%BE%8C%E7%AF%87%20-%20PS4%20Pro%E4%B8%AD%E6%96%87%E5%8A%87%E6%83%85%E9%9B%BB%E5%BD%B1%20-%20%E5%BA%95%E7%89%B9%E5%BE%8B%EF%BC%9A%E5%8F%98%E4%BA%BA%20-%20Detroit_%20Become%20Human%20All%20Cutscenes.mp4">【底特律：變人】4K電影剪輯版(完美路線) - 後篇</a></p>
+<figure data-type="image" tabindex="1"><img src="https://s2.ax1x.com/2019/12/14/QR8I9x.png" alt="请输入图片描述" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Blaze - 端对端的文件传输免费工具]]></title>
+        <id>http://blog.vpscu.com/post/blaze/</id>
+        <link href="http://blog.vpscu.com/post/blaze/">
+        </link>
+        <updated>2020-06-29T03:09:54.000Z</updated>
+        <summary type="html"><![CDATA[<p>Blaze 是一款开源免费的“网页版”在线文件传输工具，它有着非常鲜明的特点，就是免安装任何程序，你只需用较为先进的浏览器 (如电脑上的 Chrome、新版 Edge、FireFox；</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>Blaze 是一款开源免费的“网页版”在线文件传输工具，它有着非常鲜明的特点，就是免安装任何程序，你只需用较为先进的浏览器 (如电脑上的 Chrome、新版 Edge、FireFox；</p>
+<!-- more -->
+<p>手机上的 Safari、Chrome 等) 访问其网站即可传文件。</p>
+<p>与网盘完全不同的是，Blaze 通过使用 WebSockets 和 WebRTC 技术，能让你的多个设备实现Peer to Peer「点对点」文件传输，整个传输过程完全无需将文件上传到任何的服务器，而是直接在设备之间连接互传，所以如果你的设备都处于同一局域网内，就能实现不耗费公网流量的高速且安全的内网传输了。<br>
+部署起来的话其实是非常简单的，博主使用的是centos7系统</p>
+<p>安装epel源</p>
+<pre><code>yum install epel-release
+</code></pre>
+<p>更新软件</p>
+<pre><code>yum -y update
+</code></pre>
+<p>安装node.js</p>
+<pre><code>yum install -y nodejs
+</code></pre>
+<p>去官方fork源代码<br>
+<a href="https://github.com/blenderskool/blaze">官网源代码</a></p>
+<p>拉取代码</p>
+<pre><code>git clone https://github.com/blenderskool/blaze
+git remote add upstream https://github.com/blenderskool/blaze.git
+</code></pre>
+<p>开始安装</p>
+<pre><code>cd blaze
+npm install
+</code></pre>
+<p>安装完成之后，用如下命令部署</p>
+<pre><code>npm run dev
+</code></pre>
+<p>然后会监听3030端口，用ip:3030端口访问</p>
+<p>安装screen</p>
+<pre><code>yum -y install screen
+</code></pre>
+<p>创建后台窗口</p>
+<pre><code>screen -S blaze
+</code></pre>
+<p>启动blaze</p>
+<pre><code>npm run dev
+</code></pre>
+<p>博主搭建的测试页面<br>
+<a href="http://107.173.50.101:3030/">测试页面</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[国产操作系统uos初体验，附vm安装教程和iso包]]></title>
+        <id>http://blog.vpscu.com/post/uos-linux/</id>
+        <link href="http://blog.vpscu.com/post/uos-linux/">
+        </link>
+        <updated>2020-06-29T03:07:59.000Z</updated>
+        <summary type="html"><![CDATA[<p>我用vmware体验了一下</p>
+<p>1.新建虚拟机</p>
+<p>2.选择 典型<br>
+...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>我用vmware体验了一下</p>
+<p>1.新建虚拟机</p>
+<p>2.选择 典型<br>
+...</p>
+<!-- more -->
+<p>3.选择安装iso</p>
+<p>4.选择Linux，下面选择其他Linux3.x内核 64位</p>
+<p>5.注意，最大磁盘大小一定要设置为64g以上，不然一会安装不了系统</p>
+<p>6.其他参数随意设置，我内存给了786m，一样流程运行</p>
+<p>评价：起初我是拒绝的，用了一下发现还不错，界面什么的都蛮好看的，一会看看能不能装个双系统深度体验一下<br>
+附iso包</p>
+<p>https://pan.zxd.win/%E7%B3%BB%E7%BB%9F%E9%95%9C%E5%83%8F/uos-20-desktop-amd64.iso</p>
+<figure data-type="image" tabindex="1"><img src="https://s2.ax1x.com/2020/01/16/ljTDYj.png" alt="请输入图片描述" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[整理了一下个人常用到的Linux命令]]></title>
+        <id>http://blog.vpscu.com/post/linux-command/</id>
+        <link href="http://blog.vpscu.com/post/linux-command/">
+        </link>
+        <updated>2020-06-29T03:02:50.000Z</updated>
+        <summary type="html"><![CDATA[<p>1.命令可能有些已经失效，请仔细检查<br>
+2.若命令有错误，可以在下方评论<br>
+3.都是个人随手记录，系统性不是特别好<br>
+...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>1.命令可能有些已经失效，请仔细检查<br>
+2.若命令有错误，可以在下方评论<br>
+3.都是个人随手记录，系统性不是特别好<br>
+...</p>
+<!-- more -->
+<h1 id="linux笔记">linux笔记</h1>
+<h3 id="检测vps内存包含swap">检测vps内存（包含swap）</h3>
+<p>wget http://down.xxorg.com/Tool/memtest/memtest_10M_64 chmod +x ./memtest_10M_64 ./memtest_10M_64</p>
+<h3 id="安装epel源">安装epel源</h3>
+<p>yum install epel-release</p>
+<h3 id="一键评测脚本">一键评测脚本</h3>
+<p>wget https://raw.githubusercontent.com/oooldking/script/master/superbench.sh<br>
+chmod +x superbench.sh<br>
+./superbench.sh</p>
+<p>wget -qO- --no-check-certificate https://raw.githubusercontent.com/oooldking/script/master/superbench.sh | bash</p>
+<p>wget -qO- git.io/superbench.sh | bash</p>
+<p>chmod 777 ./unalpine.sh<br>
+./unalpine.sh</p>
+<h3 id="iptables-端口转发一键管理脚本-v111">iptables 端口转发一键管理脚本 [v1.1.1]</h3>
+<p>wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/iptables-pf.sh &amp;&amp; chmod +x iptables-pf.sh &amp;&amp; bash iptables-pf.sh</p>
+<h3 id="rclone挂载示例">rclone挂载示例</h3>
+<p>rclone mount zxd666: /zxd666 --allow-other --allow-non-empty --vfs-cache-mode writes</p>
+<p>java -Xmx1024M -Xms1024M -jar server.jar nogui</p>
+<p>rclone mount zxd666:/root /zxd666 --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --umask 000</p>
+<h3 id="安装nodejs-centos系统">安装nodejs #CentOS系统</h3>
+<p>curl -sL https://rpm.nodesource.com/setup_10.x | bash -</p>
+<p>yum install nodejs git -y</p>
+<h3 id="查看onedrive容量页面">查看onedrive容量页面</h3>
+<p>storman.aspx</p>
+<h3 id="dd安装win81">dd安装win8.1</h3>
+<p>wget --no-check-certificate -qO DebianNET.sh 'https://raw.githubusercontent.com/wn789/xitong/master/DebianNET.sh' &amp;&amp; bash DebianNET.sh -dd 'https://moeclub.org/onedrive/IMAGE/Windows/win8.1emb_x64.tar.gz'</p>
+<h3 id="安装rclone">安装rclone</h3>
+<p>curl https://rclone.org/install.sh | sudo bash</p>
+<h3 id="生成ssh密钥">生成ssh密钥</h3>
+<p>ssh-keygen -t rsa -b 4096 -C“3014779200@qq.com”</p>
+<h3 id="更换阿里云源">更换阿里云源</h3>
+<p>wget -qO- git.io/superupdate.sh | bash</p>
+<h3 id="centos7创建swap">centos7创建swap</h3>
+<p>dd if=/dev/zero of=/swapfile bs=1M count=1024</p>
+<p>mkswap /swapfile</p>
+<p>swapon /swapfile</p>
+<p>vi /etc/fstab</p>
+<p>/swapfile swap swap defaults 0 0</p>
+<h3 id="网络测速">网络测速</h3>
+<p>wget https://raw.githubusercontent.com/oooldking/script/master/superspeed.sh<br>
+chmod +x superspeed.sh<br>
+./superspeed.sh</p>
+<h3 id="java运行jar示例">java运行jar示例</h3>
+<p>java -Xmx1900M -Xms64M -jar -Dfile.encoding=utf-8 -Duser.timezone=Asia/Shanghai run.jar nogui</p>
+<h3 id="一键挂载">一键挂载</h3>
+<p>yum install wget -y &amp;&amp; wget -O auto_disk.sh http://download.bt.cn/tools/auto_disk.sh &amp;&amp; bash auto_disk.sh</p>
+<p>wget -O disk.sh http://download.bt.cn/tools/disk.sh &amp;&amp; bash disk.sh /website</p>
+<h3 id="解决host-key-verification-failed">解决Host key verification failed</h3>
+<p>ssh-keygen -R ip</p>
+<h3 id="centos安装python3">centos安装python3</h3>
+<p>wget https://www.moerats.com/usr/shell/Python3/CentOS_Python3.6.sh &amp;&amp; sh CentOS_Python3.6.sh</p>
+<h3 id="申请ssl证书文件验证位置">申请ssl证书文件验证位置</h3>
+<p>/.well-known/pki-validation/fileauth.txt</p>
+<h3 id="aws设置密码登陆脚本">aws设置密码登陆脚本</h3>
+<p>#!/bin/bash<br>
+echo root:xxxxxxxx |sudo chpasswd root<br>
+sudo sed -i 's/^#?PermitRootLogin.<em>/PermitRootLogin yes/g' /etc/ssh/sshd_config;<br>
+sudo sed -i 's/^#?PasswordAuthentication.</em>/PasswordAuthentication yes/g' /etc/ssh/sshd_config;<br>
+sudo reboot</p>
+<h3 id="ss一键脚本">ss一键脚本</h3>
+<p>ss：wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-go.sh<br>
+chmod +x shadowsocks-go.sh<br>
+./shadowsocks-go.sh 2&gt;&amp;1 | tee shadowsocks-go.log</p>
+<h3 id="goflyway一键脚本">goflyway一键脚本</h3>
+<p>wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/goflyway.sh &amp;&amp; chmod +x goflyway.sh &amp;&amp; bash goflyway.sh</p>
+<h3 id="ovz架构bbrcentos6需要升级glibc">ovz架构bbr（centos6需要升级glibc）</h3>
+<p>wget --no-check-certificate https://raw.githubusercontent.com/kuoruan/shell-scripts/master/ovz-bbr/ovz-bbr-installer.sh chmod +x ovz-bbr-installer.sh ./ovz-bbr-installer.sh</p>
+<h3 id="kvm架构bbr">kvm架构bbr</h3>
+<p>wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh<br>
+chmod +x bbr.sh<br>
+./bbr.sh</p>
+<h3 id="多版本bbr一键脚本">多版本bbr一键脚本</h3>
+<p>wget -N --no-check-certificate &quot;https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh&quot; &amp;&amp; chmod +x tcp.sh &amp;&amp; ./tcp.sh</p>
+<p>java -jar openzaly-server.jar -h</p>
+<h3 id="另一个ss脚本">另一个ss脚本</h3>
+<p>wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh<br>
+chmod +x shadowsocks-all.sh<br>
+./shadowsocks-all.sh 2&gt;&amp;1 | tee shadowsocks-all.log</p>
+<h3 id="mtproxy">MTProxy</h3>
+<p>wget -N --no-check-certificate https://raw.githubusercontent.com/iiiiiii1/doubi/master/mtproxy_go.sh &amp;&amp; bash mtproxy_go.sh</p>
+<h3 id="跑分脚本">跑分脚本</h3>
+<p>wget https://soft.itbulu.com/tools/UnixBench5.1.3.tgz<br>
+tar -zxvf UnixBench5.1.3.tgz<br>
+cd UnixBench<br>
+make<br>
+./Run</p>
+<h3 id="宝塔">宝塔</h3>
+<p>yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install.sh &amp;&amp; sh install.sh</p>
+<h3 id="修改宝塔端口">修改宝塔端口</h3>
+<h4 id="centos6">centos6</h4>
+<p>echo '8881' &gt; /www/server/panel/data/port.pl &amp;&amp; /etc/init.d/bt restart iptables -I INPUT -p tcp -m state --state NEW -m tcp --dport 8881 -j ACCEPT service iptables save</p>
+<h4 id="centos7">centos7</h4>
+<p>echo '8881' &gt; /www/server/panel/data/port.pl &amp;&amp; /etc/init.d/bt restart firewall-cmd --permanent --zone=public --add-port=8881/tcp firewall-cmd --reload</p>
+<h3 id="宝塔面板其他示例">宝塔面板其他示例</h3>
+<p>echo '23901' &gt; /www/server/panel/data/port.pl &amp;&amp; service bt restart<br>
+echo '[::]:8080' &gt; /www/server/panel/data/port.pl &amp;&amp; /etc/init.d/bt restart<br>
+http://[2001:41d0:8:6db3:2020:2021:0:19]:8080/login</p>
+<h3 id="nginx监听ipv6">nginx监听ipv6</h3>
+<p>listen 80;</p>
+<p>listen [::]:80;</p>
+<p>listen 443 ssl http2;</p>
+<p>listen [::]:443 ssl http2;</p>
+<h3 id="修改ssh端口">修改ssh端口</h3>
+<p>vim /etc/ssh/sshd_config</p>
+<h3 id="重启ssh">重启ssh</h3>
+<p>/etc/init.d/sshd restart</p>
+<h3 id="查看系统端口占用">查看系统端口占用</h3>
+<p>yum -y install net-tools</p>
+<p>netstat -ntlp</p>
+<h3 id="hping3用法示例">hping3用法示例</h3>
+<p>hping3 -S -i u1000 -p 80 -V 40.83.78.164<br>
+hping3 -c 10000 -d 120 -S -w 64 -p -i u100 80 104.167.104.88<br>
+-i u100</p>
+<h3 id="安装ssh">安装ssh</h3>
+<p>yum install openssh-server -y<br>
+service sshd restart</p>
+<h3 id="安装python36">安装python3.6</h3>
+<p>yum install -y wget &amp;&amp; wget -O py3.sh https://lnmp.me/ftp/py3.sh --no-check-certificate &amp;&amp; sh py3.sh</p>
+<h3 id="kangle">kangle</h3>
+<p>yum -y install wget;wget http://kangle.odata.cc/start;sh start</p>
+<h3 id="改宝塔密码">改宝塔密码</h3>
+<p>cd /www/server/panel &amp;&amp; python tools.pyc panel xxxxxxxx</p>
+<h3 id="centos关闭防火墙">centos关闭防火墙</h3>
+<h4 id="6">6</h4>
+<p>service iptables stop</p>
+<h4 id="7">7</h4>
+<p>systemctl stop firewalld.service</p>
+<h3 id="urlos安装后需执行">urlos安装后需执行</h3>
+<p>service docker restart</p>
+<h3 id="汉化面板">汉化面板</h3>
+<p>wget -P /opt/ovz-web-panel/config/locales http://mise.tianji.me/zh_CN.yml<br>
+/etc/rc.d/init.d/owp restart</p>
+<h3 id="端口映射示例">端口映射示例</h3>
+<p>iptables -t nat -A PREROUTING -i eth0 -p tcp -m tcp --dport 10022 -j DNAT --to-destination 192.168.1.100:22</p>
+<h3 id="一键增加中文">一键增加中文</h3>
+<p>wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/LocaleCN/master/LocaleCN.sh &amp;&amp; bash LocaleCN.sh</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[vps 最有价值的个人玩法！离线下载并自动上传onedrive！]]></title>
+        <id>http://blog.vpscu.com/post/lixianod/</id>
+        <link href="http://blog.vpscu.com/post/lixianod/">
+        </link>
+        <updated>2020-06-29T02:58:54.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="本期教程比较繁琐请按照教程一步一步来">本期教程比较繁琐，请按照教程一步一步来！</h2>
+<p>...</p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="本期教程比较繁琐请按照教程一步一步来">本期教程比较繁琐，请按照教程一步一步来！</h2>
+<p>...</p>
+<!-- more -->
+<h2 id="一-前期准备">一、前期准备</h2>
+<p>1.感谢moerats大佬的教程，可以让我简化以及综合。</p>
+<p>2.只讲linux用法，win和mac去萌咖大佬项目看https://github.com/MoeClub/OneList/tree/master/OneDriveUploader<br>
+3.onedrive账号很好弄，一个5T的账号也就两三块钱。</p>
+<h2 id="二-软件准备">二、软件准备</h2>
+<p>1.你vps有安装aria2，没安装自己去安装一个 https://mikuac.com/archives/355/<br>
+2.授权认证<br>
+点击右侧URL登录并授权，授权地址→ 国际版       世纪互联<br>
+3.授权后会获取一个localhost开头打不开的链接，这里只需要记住code，也就是链接中code=和&amp;中间的参数。</p>
+<h2 id="三-安装onedriveuploader">三、安装OneDriveUploader</h2>
+<pre><code>#64位系统下载
+wget https://raw.githubusercontent.com/MoeClub/OneList/master/OneDriveUploader/amd64/linux/OneDriveUploader -P /usr/local/bin/
+#32位系统下载
+wget https://raw.githubusercontent.com/MoeClub/OneList/master/OneDriveUploader/i386/linux/OneDriveUploader -P /usr/local/bin/
+#arm架构下载
+wget https://raw.githubusercontent.com/MoeClub/OneList/master/OneDriveUploader/arm/linux/OneDriveUploader -P /usr/local/bin/
+</code></pre>
+<p>给予权限</p>
+<pre><code>chmod +x /usr/local/bin/OneDriveUploader
+</code></pre>
+<h2 id="四-初始化配置">四、初始化配置</h2>
+<pre><code>#将moerats替换成你上面获取的code参数
+code=&quot;moerats&quot;
+OneDriveUploader -a &quot;${code}&quot;
+</code></pre>
+<p>如果提示 Init config file: /path/to/file/auth.json 类似信息，则初始化成功。</p>
+<h2 id="aria2自动上传">Aria2自动上传</h2>
+<p>上传脚本<br>
+1.在/root文件夹创建一个空白文件</p>
+<pre><code>vi rcloneupload.sh
+</code></pre>
+<p>2.该文件中复制如下代码</p>
+<pre><code>#!/bin/bash
+
+GID=&quot;$1&quot;;
+FileNum=&quot;$2&quot;;
+File=&quot;$3&quot;;
+MaxSize=&quot;15728640&quot;;
+Thread=&quot;3&quot;;  #默认3线程，自行修改，服务器配置不好的话，不建议太多
+Block=&quot;20&quot;;  #默认分块20m，自行修改
+RemoteDIR=&quot;&quot;;  #上传到Onedrive的路径，默认为根目录，如果要上传到MOERATS目录，&quot;&quot;里面请填成MOERATS
+LocalDIR=&quot;/www/download/&quot;;  #Aria2下载目录，记得最后面加上/
+Uploader=&quot;/usr/local/bin/OneDriveUploader&quot;;  #上传的程序完整路径，默认为本文安装的目录
+Config=&quot;/root/auth.json&quot;;  #初始化生成的配置auth.json绝对路径，参考第3步骤生成的路径
+
+
+if [[ -z $(echo &quot;$FileNum&quot; |grep -o '[0-9]*' |head -n1) ]]; then FileNum='0'; fi
+if [[ &quot;$FileNum&quot; -le '0' ]]; then exit 0; fi
+if [[ &quot;$#&quot; != '3' ]]; then exit 0; fi
+
+function LoadFile(){
+  if [[ ! -e &quot;${Uploader}&quot; ]]; then return; fi
+  IFS_BAK=$IFS
+  IFS=$'\n'
+  tmpFile=&quot;$(echo &quot;${File/#$LocalDIR}&quot; |cut -f1 -d'/')&quot;
+  FileLoad=&quot;${LocalDIR}${tmpFile}&quot;
+  if [[ ! -e &quot;${FileLoad}&quot; ]]; then return; fi
+  ItemSize=$(du -s &quot;${FileLoad}&quot; |cut -f1 |grep -o '[0-9]*' |head -n1)
+  if [[ -z &quot;$ItemSize&quot; ]]; then return; fi
+  if [[ &quot;$ItemSize&quot; -ge &quot;$MaxSize&quot; ]]; then
+    echo -ne &quot;\033[33m${FileLoad} \033[0mtoo large to spik.\n&quot;;
+    return;
+  fi
+  ${Uploader} -c &quot;${Config}&quot; -t &quot;${Thread}&quot; -b &quot;${Block}&quot; -s &quot;${FileLoad}&quot; -r &quot;${RemoteDIR}&quot;
+  if [[ $? == '0' ]]; then
+    rm -rf &quot;${FileLoad}&quot;;
+  fi
+  IFS=$IFS_BAK
+}
+LoadFile;
+</code></pre>
+<p>授权</p>
+<pre><code>chmod +x rcloneupload.sh
+</code></pre>
+<p>然后再到Aria2配置文件中加上一行</p>
+<pre><code>on-download-complete=/root/rcloneupload.sh
+</code></pre>
+<p>即可，后面为脚本的路径。最后重启Aria2生效。</p>
+<p>记得最后的最后在ssh中试一下</p>
+<pre><code>bash /root/rcloneupload.sh
+</code></pre>
+<p>如果没有任何反应，那么就好，如果报错，那么。</p>
+<pre><code>1、安装dos2unix
+Centos：yum install dos2unix -y
+Debian/Ubuntu：apt install dos2unix -y
+2、转换格式
+dos2unix /root/rcloneupload.sh
+</code></pre>
+<p>关于aria2使用<br>
+1.谷歌浏览器插件aria2 for chrome<br>
+2.自己安装或者用别人的ariang<br>
+3.安卓手机软件aria2app（谷歌商店有</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[OneDrive扩容25t教程及简单小结]]></title>
+        <id>http://blog.vpscu.com/post/onedrive25t/</id>
+        <link href="http://blog.vpscu.com/post/onedrive25t/">
+        </link>
+        <updated>2020-06-29T02:56:15.000Z</updated>
+        <summary type="html"><![CDATA[<p>扩容前提<br>
+1.已有账号使用量达到4.5t<br>
+2.管理员在office365管理后台提起工单<br>
+3.获得扩容权限</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>扩容前提<br>
+1.已有账号使用量达到4.5t<br>
+2.管理员在office365管理后台提起工单<br>
+3.获得扩容权限</p>
+<!-- more -->
+<p>具体可参考萌鼠大佬的博客文章<br>
+https://www.moerats.com/archives/975/</p>
+<p>在获得权限之后，就可以开始扩容了（仅能扩容已使用超过4.5t的账号）<br>
+1.首先你需要一台支持Windows powershell的电脑<br>
+2.安装SharePoint Online Management Shell<br>
+下载地址：https://www.microsoft.com/zh-CN/download/details.aspx?id=35588<br>
+3.连接到你的组织</p>
+<pre><code>Connect-SPOService -Url https://&lt;orgnam e&gt;-admin.sharepoint.com
+</code></pre>
+<p>例如我的就是</p>
+<pre><code>Connect-SPOService -Url https://hostlocmjj-admin.sharepoint.com
+</code></pre>
+<p><orgnam e>部分随便打开一个账号的onedrive就能看到<br>
+4.此时会弹出一个登陆界面，注意你需要登陆具有管理员权限的账号<br>
+5.输入指令扩容</p>
+<pre><code>Set-SPOSite -Identity https://hostlocmjj-my.sharepoint.com/personal/xxxxxxx_uoe_men -StorageQuota 26214400
+</code></pre>
+<p>上面这条指令是我的，你需要修改的部分有三个<br>
+hostlocmjj需要改为你的域名前缀<br>
+xxxxxxx_uoe_men代表修改的是xxxxxxx@uoe.men这个用户，你要修改什么用户就以此类推，把@和.都改成_就行<br>
+26214400代表25t，对应的5242880代表5t，你可以按需修改，注意不要大于26214400就行</p>
+<p>以上教程不仅仅是25t的扩容，在日常创建账号的过程中，经常会出现一些账号只有1t容量的玄学问题，通过这个教程同样可以修改为正常的容量</p>
+<p>扩容后需注意的事项<br>
+1.需要保持4.5t的占用，否则容量会被收回<br>
+2.据某些大佬反映，这个操作可能会加大全局被封的风险（指非官方正规途径获取的账号）<br>
+3.office最近有些抽风，新创建的账号可能需要等一段时间才能登陆，onedrive的分配也需要等一段时间</p>
+<p>本文部分资料来源：https://blog.curlc.com/archives/66.html</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Baklib：简单且易用的自助建站平台]]></title>
         <id>http://blog.vpscu.com/post/baklib/</id>
         <link href="http://blog.vpscu.com/post/baklib/">
         </link>
         <updated>2020-06-29T02:52:46.000Z</updated>
-        <summary type="html"><![CDATA[<p>如果你是一个小白，不懂搭建网站所需要的复杂环境，却又想拥有一个属于你自己的网站时，不妨来试试Baklib吧</p>
+        <summary type="html"><![CDATA[<p>如果你是一个小白，不懂搭建网站所需要的复杂环境，却又想拥有一个属于你自己的网站时，不妨来试试Baklib吧<br>
+...</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>如果你是一个小白，不懂搭建网站所需要的复杂环境，却又想拥有一个属于你自己的网站时，不妨来试试Baklib吧</p>
+        <content type="html"><![CDATA[<p>如果你是一个小白，不懂搭建网站所需要的复杂环境，却又想拥有一个属于你自己的网站时，不妨来试试Baklib吧<br>
+...</p>
 <!-- more -->
 <p>无论是知识库/项目文档/产品手册还是帮助中心/FAQ/在线问答亦或是企业知识输出平台，Baklib都能快速的帮你建立属于你的网站</p>
 <p><strong>简洁的操作界面</strong><br>
