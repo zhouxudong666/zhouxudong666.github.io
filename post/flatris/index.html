@@ -1,9 +1,8 @@
-<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>我的阅读 | Gridea</title>
+<title>flatris：搭建一个俄罗斯方块在线对战平台 | Gridea</title>
 <meta name="description" content="温故而知新" />
 <link rel="shortcut icon" href="http://blog.vpscu.com/favicon.ico">
 <link rel="stylesheet" href="http://blog.vpscu.com/styles/main.css">
@@ -16,13 +15,21 @@
 <script src="http://blog.vpscu.com/media/js/jquery.magnific-popup.min.js"></script>
 <script src="http://blog.vpscu.com/media/js/functions.js"></script>
     <meta name="referrer" content="never">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iMuFeng/bmdb@1.8.0/dist/Bmdb.min.css">
-    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/iMuFeng/bmdb@1.8.0/dist/Bmdb.min.js'></script>
+    <meta name="description" content="项目地址：https://github.com/skidding/flatris
+环境：nodsjs
+服务器系统：centos7
+首先更新系统
+yum -y update
+
+然后安装环境
+yum -y install nodejs
+
+安装管..." />
+    <meta name="keywords" content="教程" />
+    <script src="http://blog.vpscu.com/media/js/waterfall.min.js"></script>
+    <script src="http://blog.vpscu.com/media/js/prism.min.js"></script>
   </head>
   <body>
-    <!-- start: #wrapper -->
-    <div class="wrapper">
-      
             <header id="header" class="grid-container">
         <!-- start: .menu-wrapper -->
         <div class="menu-mobile"> 
@@ -89,14 +96,150 @@
         </div>
       </div>
 
-      <main id="friends" class="main fullcover no-sidebar content">
-        <div class="grid-container module-wrapper enable-masonry aos-init aos-animate" data-aos="fade-up">
+      <main id="single" class="main grid-container fullcover no-sidebar aos-init aos-animate" data-aos="fade">
+
+        <div class="center content">
+          <div class="featured-image cover" style="background-image: url('/media/images/gridea.jpg');">
+            <div class="meta top"> 
+              <time class="meta-info" style="float:left;" datetime="2020-06-29"><i class="fa fa-calendar"></i><span class="lately">1 分钟前</span></time>
+              
+              <a href="http://blog.vpscu.com/post/flatris/#comments" class="comments meta-info" title="">
+                <i class="fa fa-comment remixicon"></i><span class="comment-count valine-comment-count" data-xid="/flatris/"> </span>
+              </a>
+              <span id="/flatris/" class="leancloud_visitors views-counter meta-info" title=""><i class="fa fa-leancloud remixicon"></i><span class="leancloud-visitors-count"></span></span>
+              
+            </div>
+            <div class="info">
+              <div class="tags ">
+                
+                      <a href="http://blog.vpscu.com/tag/qq1qz7ZU3/" class="ctag ctag-0 ctag-qq1qz7ZU3" aria-label="">教程</a>
+                    
+              </div>
+              <h1 class="title ularge white bold">flatris：搭建一个俄罗斯方块在线对战平台</h1>
+            </div>
+          </div>
+        </div>  
+
         <div class="epcl-page-wrapper">
-          <div class="section-content" style="margin-top:3em;"></div>
-        </div>
-        </div>
+          <div class="left-content grid-70 np-mobile">
+            <article class="main-article post">
+              <section class="post-content">
+                <div class="text">
+                  <p>项目地址：https://github.com/skidding/flatris<br>
+环境：nodsjs<br>
+服务器系统：centos7</p>
+<p>首先更新系统</p>
+<pre><code>yum -y update
+</code></pre>
+<p>然后安装环境</p>
+<pre><code>yum -y install nodejs
+</code></pre>
+<p>安装管理器n</p>
+<pre><code>npm install -g n
+</code></pre>
+<p>安装nodejs最新版本</p>
+<pre><code>n latest
+</code></pre>
+<p>切换最新版本（回车确认）</p>
+<pre><code>n
+</code></pre>
+<p>安装yarn</p>
+<pre><code>npm install -g yarn
+</code></pre>
+<p>拉取一下项目文件，没安装git的先安装git</p>
+<pre><code>yum -y install git
+git clone https://github.com/skidding/flatris
+</code></pre>
+<p>进入项目文件夹</p>
+<pre><code>cd flatris
+</code></pre>
+<p>文件重命名</p>
+<pre><code>mv .env.example.js .env.js
+</code></pre>
+<p>安装</p>
+<pre><code>yarn install
+</code></pre>
+<p>构建</p>
+<pre><code>yarn build
+</code></pre>
+<p>启动</p>
+<pre><code>yarn start
+</code></pre>
+<p>默认运行在3000端口，请将对应的防火墙打开，没有特殊要求的话，已经搭建完成</p>
+<p>如果要解决后台运行的问题，先按ctrl+c退出，然后安装screen</p>
+<pre><code>yum -y install screen
+</code></pre>
+<p>创建一个后台终端</p>
+<pre><code>screen -S flatris
+</code></pre>
+<p>继续启动</p>
+<pre><code>yarn start
+</code></pre>
+<p>这样即使你关闭ssh，对战平台也会继续运行</p>
+<p>但是我们可以看到，现在我们用的是ip+端口的方式访问的，怎样使用域名访问呢</p>
+<p>我使用的方法是反代</p>
+<p>由于我已经安装好了宝塔面板，所以直接创建站点，点击反向代理</p>
+<p>目标URL设置为http://127.0.0.1:3000</p>
+<p>保存之后，访问站点域名就能打开对战平台了</p>
+<p>演示站点：https://game.v2ex.ltd/</p>
+
+                </div>
+                <div class="clear"></div>
+              </section>
+            </article>
+            <div class="clear"></div>
+
+            <section class="related section">
+              
+              
+              <article class="next grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('http://blog.vpscu.com/post-images/hello-gridea.png');"></div>
+                 <a href="http://blog.vpscu.com/post/hello-gridea/" class="full-link"></a>
+                 <div class="info">
+                  <time datetime="2018-12-12">2018-12-12</time>
+                  <h4 class="title white no-margin">Hello Gridea</h4>
+                </div>
+                 <span class="epcl-button red">
+                  <img src="http://blog.vpscu.com/media/images/right-arrow.svg" width="15" alt="Left Arrow">
+                </span>
+                <div class="overlay"></div>
+              </article>
+              
+
+                <div class="clear"></div>
+            </section>
+
+              <div class="clear"></div>
+              
+            
+              <div id="comments" class="bg-white hosted ">
+                <div class="clear"></div>
+<script>
+jQuery(document).ready(function($){
+    $('.vemoji-btn').text('😀');
+    $("#comments").on('click', 'span.vat',function(){
+        $(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+        $('textarea#veditor').focus();
+    })
+    if(window.location.hash){
+        var checkExist = setInterval(function() {
+            if ($(window.location.hash).length) {
+                $('html, body').animate({scrollTop: $(window.location.hash).offset().top-200}, 600);
+                clearInterval(checkExist);
+            }
+        }, 100);
+    }
+})
+</script>
+
+              </div>
+            
+
+            </div>
+          </div>
       </main>
-        <footer id="footer" class="grid-container">
+
+          <footer id="footer" class="grid-container">
         <div class="widgets row gradient-effect">
             <div class="default-sidebar border-effect">
               <div class="grid-33 tablet-grid-50 mobile-grid-100">
@@ -228,15 +371,9 @@
 </script>
     
 
-    <script>
-    new Bmdb({
-      type: 'books',
-      selector: '.section-content',
-      secret: '',
-      noMoreText: '没有更多数据了',
-      limit: 30
-    })
-    </script>
+      
+    <script src="http://blog.vpscu.com/media/js/functions-post.js"></script>
+
     </div>
     <!-- end: #wrapper -->
   </body>

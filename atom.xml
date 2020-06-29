@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://blog.vpscu.com</id>
     <title>Gridea</title>
-    <updated>2020-06-29T00:33:47.995Z</updated>
+    <updated>2020-06-29T02:47:25.663Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://blog.vpscu.com"/>
     <link rel="self" href="http://blog.vpscu.com/atom.xml"/>
@@ -10,6 +10,71 @@
     <logo>http://blog.vpscu.com/images/avatar.png</logo>
     <icon>http://blog.vpscu.com/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[flatris：搭建一个俄罗斯方块在线对战平台]]></title>
+        <id>http://blog.vpscu.com/post/flatris/</id>
+        <link href="http://blog.vpscu.com/post/flatris/">
+        </link>
+        <updated>2020-06-29T02:46:03.000Z</updated>
+        <content type="html"><![CDATA[<p>项目地址：https://github.com/skidding/flatris<br>
+环境：nodsjs<br>
+服务器系统：centos7</p>
+<p>首先更新系统</p>
+<pre><code>yum -y update
+</code></pre>
+<p>然后安装环境</p>
+<pre><code>yum -y install nodejs
+</code></pre>
+<p>安装管理器n</p>
+<pre><code>npm install -g n
+</code></pre>
+<p>安装nodejs最新版本</p>
+<pre><code>n latest
+</code></pre>
+<p>切换最新版本（回车确认）</p>
+<pre><code>n
+</code></pre>
+<p>安装yarn</p>
+<pre><code>npm install -g yarn
+</code></pre>
+<p>拉取一下项目文件，没安装git的先安装git</p>
+<pre><code>yum -y install git
+git clone https://github.com/skidding/flatris
+</code></pre>
+<p>进入项目文件夹</p>
+<pre><code>cd flatris
+</code></pre>
+<p>文件重命名</p>
+<pre><code>mv .env.example.js .env.js
+</code></pre>
+<p>安装</p>
+<pre><code>yarn install
+</code></pre>
+<p>构建</p>
+<pre><code>yarn build
+</code></pre>
+<p>启动</p>
+<pre><code>yarn start
+</code></pre>
+<p>默认运行在3000端口，请将对应的防火墙打开，没有特殊要求的话，已经搭建完成</p>
+<p>如果要解决后台运行的问题，先按ctrl+c退出，然后安装screen</p>
+<pre><code>yum -y install screen
+</code></pre>
+<p>创建一个后台终端</p>
+<pre><code>screen -S flatris
+</code></pre>
+<p>继续启动</p>
+<pre><code>yarn start
+</code></pre>
+<p>这样即使你关闭ssh，对战平台也会继续运行</p>
+<p>但是我们可以看到，现在我们用的是ip+端口的方式访问的，怎样使用域名访问呢</p>
+<p>我使用的方法是反代</p>
+<p>由于我已经安装好了宝塔面板，所以直接创建站点，点击反向代理</p>
+<p>目标URL设置为http://127.0.0.1:3000</p>
+<p>保存之后，访问站点域名就能打开对战平台了</p>
+<p>演示站点：https://game.v2ex.ltd/</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>http://blog.vpscu.com/post/hello-gridea/</id>
