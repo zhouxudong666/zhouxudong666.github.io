@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://blog.vpscu.com</id>
+    <id>https://tos3.cn</id>
     <title>小东博客</title>
-    <updated>2020-07-07T08:47:52.657Z</updated>
+    <updated>2020-07-27T16:25:38.202Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://blog.vpscu.com"/>
-    <link rel="self" href="https://blog.vpscu.com/atom.xml"/>
+    <link rel="alternate" href="https://tos3.cn"/>
+    <link rel="self" href="https://tos3.cn/atom.xml"/>
     <subtitle>分享有价值的资源</subtitle>
-    <logo>https://blog.vpscu.com/images/avatar.png</logo>
-    <icon>https://blog.vpscu.com/favicon.ico</icon>
+    <logo>https://tos3.cn/images/avatar.png</logo>
+    <icon>https://tos3.cn/favicon.ico</icon>
     <rights>All rights reserved 2020, 小东博客</rights>
     <entry>
         <title type="html"><![CDATA[入手了新游戏 底特律：成为人类 ]]></title>
-        <id>https://blog.vpscu.com/post/game-Detroit/</id>
-        <link href="https://blog.vpscu.com/post/game-Detroit/">
+        <id>https://tos3.cn/post/game-Detroit/</id>
+        <link href="https://tos3.cn/post/game-Detroit/">
         </link>
         <updated>2020-06-29T03:25:17.000Z</updated>
         <summary type="html"><![CDATA[<p>其实也不算新游戏了，只不过之前是在ps4平台上了，云了好几次，然后今年上半年在Epic Games上预售，用俄罗斯区账号入手的，大概花了35元左右，现在的话，美区要30美元，俄区要190元左右。</p>
@@ -28,8 +28,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Blaze - 端对端的文件传输免费工具]]></title>
-        <id>https://blog.vpscu.com/post/blaze/</id>
-        <link href="https://blog.vpscu.com/post/blaze/">
+        <id>https://tos3.cn/post/blaze/</id>
+        <link href="https://tos3.cn/post/blaze/">
         </link>
         <updated>2020-06-29T03:09:54.000Z</updated>
         <summary type="html"><![CDATA[<p>Blaze 是一款开源免费的“网页版”在线文件传输工具，它有着非常鲜明的特点，就是免安装任何程序，你只需用较为先进的浏览器 (如电脑上的 Chrome、新版 Edge、FireFox；</p>
@@ -77,8 +77,8 @@ npm install
     </entry>
     <entry>
         <title type="html"><![CDATA[国产操作系统uos初体验，附vm安装教程和iso包]]></title>
-        <id>https://blog.vpscu.com/post/uos-linux/</id>
-        <link href="https://blog.vpscu.com/post/uos-linux/">
+        <id>https://tos3.cn/post/uos-linux/</id>
+        <link href="https://tos3.cn/post/uos-linux/">
         </link>
         <updated>2020-06-29T03:07:59.000Z</updated>
         <summary type="html"><![CDATA[<p>我用vmware体验了一下</p>
@@ -103,8 +103,8 @@ npm install
     </entry>
     <entry>
         <title type="html"><![CDATA[整理了一下个人常用到的Linux命令]]></title>
-        <id>https://blog.vpscu.com/post/linux-command/</id>
-        <link href="https://blog.vpscu.com/post/linux-command/">
+        <id>https://tos3.cn/post/linux-command/</id>
+        <link href="https://tos3.cn/post/linux-command/">
         </link>
         <updated>2020-06-29T03:02:50.000Z</updated>
         <summary type="html"><![CDATA[<p>1.命令可能有些已经失效，请仔细检查<br>
@@ -257,8 +257,8 @@ service sshd restart</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[vps 最有价值的个人玩法！离线下载并自动上传onedrive！]]></title>
-        <id>https://blog.vpscu.com/post/lixianod/</id>
-        <link href="https://blog.vpscu.com/post/lixianod/">
+        <id>https://tos3.cn/post/lixianod/</id>
+        <link href="https://tos3.cn/post/lixianod/">
         </link>
         <updated>2020-06-29T02:58:54.000Z</updated>
         <summary type="html"><![CDATA[<h2 id="本期教程比较繁琐请按照教程一步一步来">本期教程比较繁琐，请按照教程一步一步来！</h2>
@@ -363,8 +363,8 @@ dos2unix /root/rcloneupload.sh
     </entry>
     <entry>
         <title type="html"><![CDATA[OneDrive扩容25t教程及简单小结]]></title>
-        <id>https://blog.vpscu.com/post/onedrive25t/</id>
-        <link href="https://blog.vpscu.com/post/onedrive25t/">
+        <id>https://tos3.cn/post/onedrive25t/</id>
+        <link href="https://tos3.cn/post/onedrive25t/">
         </link>
         <updated>2020-06-29T02:56:15.000Z</updated>
         <summary type="html"><![CDATA[<p>扩容前提<br>
@@ -408,8 +408,8 @@ xxxxxxx_uoe_men代表修改的是xxxxxxx@uoe.men这个用户，你要修改什�
     </entry>
     <entry>
         <title type="html"><![CDATA[Baklib：简单且易用的自助建站平台]]></title>
-        <id>https://blog.vpscu.com/post/baklib/</id>
-        <link href="https://blog.vpscu.com/post/baklib/">
+        <id>https://tos3.cn/post/baklib/</id>
+        <link href="https://tos3.cn/post/baklib/">
         </link>
         <updated>2020-06-29T02:52:46.000Z</updated>
         <summary type="html"><![CDATA[<p>如果你是一个小白，不懂搭建网站所需要的复杂环境，却又想拥有一个属于你自己的网站时，不妨来试试Baklib吧<br>
@@ -437,8 +437,8 @@ xxxxxxx_uoe_men代表修改的是xxxxxxx@uoe.men这个用户，你要修改什�
     </entry>
     <entry>
         <title type="html"><![CDATA[flatris：搭建一个俄罗斯方块在线对战平台]]></title>
-        <id>https://blog.vpscu.com/post/flatris/</id>
-        <link href="https://blog.vpscu.com/post/flatris/">
+        <id>https://tos3.cn/post/flatris/</id>
+        <link href="https://tos3.cn/post/flatris/">
         </link>
         <updated>2020-06-29T02:46:03.000Z</updated>
         <summary type="html"><![CDATA[<p>项目地址：https://github.com/skidding/flatris<br>
